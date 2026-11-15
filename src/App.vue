@@ -61,7 +61,7 @@ const convertDocument = async () => {
   formData.append('doc_type', docType.value)
 
   try {
-    const response = await fetch('http://localhost:8000/api/convert', {
+    const response = await fetch('https://backendpermitconvertfilexml.onrender.com/', {
       method: 'POST',
       body: formData,
     })
